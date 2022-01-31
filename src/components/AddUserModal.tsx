@@ -9,7 +9,6 @@ import {
     ModalCloseButton,
     FormControl,
     FormLabel,
-    FormErrorMessage,
     Input,
     Text,
     Button,
@@ -21,7 +20,6 @@ import { User } from '../helper/types';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { ADD_USER } from '../app/store';
 import { FaSave } from 'react-icons/fa';
-import _ from 'lodash';
 
 interface AddUserModalProps {
     isAddingUser: boolean

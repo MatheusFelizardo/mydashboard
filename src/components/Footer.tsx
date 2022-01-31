@@ -1,4 +1,4 @@
-import { Button, Flex, Icon, Link, Text } from '@chakra-ui/react';
+import { Button, Flex, Icon, Link } from '@chakra-ui/react';
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { useAppDispatch } from '../app/hooks';

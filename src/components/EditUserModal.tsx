@@ -9,7 +9,6 @@ import {
     ModalCloseButton,
     FormControl,
     FormLabel,
-    FormErrorMessage,
     Input,
     Text,
     Button,
@@ -19,7 +18,7 @@ import {
 import { validateEmail, validateString } from '../helper/utils';
 import { User } from '../helper/types';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
-import { ADD_USER, UPDATE_USER } from '../app/store';
+import { UPDATE_USER } from '../app/store';
 import { FaSave } from 'react-icons/fa';
 
 interface EditUserModalProps {

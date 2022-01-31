@@ -28,7 +28,6 @@ interface EditUserModalProps {
 
 function EditUserModal({ user, closeModal }: EditUserModalProps) {
 
-    console.log(user)
     const [name, setName] = useState(user.name)
     const [nameErrorMessage, setNameErrorMessage] = useState<null | string>(null)
     const [email, setEmail] = useState(user.email)

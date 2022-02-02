@@ -1,6 +1,5 @@
 import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import { Icon } from '@chakra-ui/react'
-import React from 'react';
 import { FaUserPlus } from 'react-icons/fa'
 
 function Header({setIsAddingUser}: {setIsAddingUser: (x: boolean)=> void}) {

@@ -11,7 +11,6 @@ import {
   Icon,
   Flex,
 } from '@chakra-ui/react';
-import React from 'react';
 import { User } from '../helper/types';
 import { FaExclamationTriangle } from 'react-icons/fa'
 import { useAppDispatch, useAppSelector } from '../app/hooks';

@@ -1,5 +1,5 @@
 import { Box, Button, Flex, Icon, Text } from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from './app/hooks';
 import { UPDATE_USER } from './app/store';
 import DeleteUserModal from './components/DeleteUserModal';

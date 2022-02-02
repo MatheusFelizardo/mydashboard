@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { FaPen, FaTrashAlt } from 'react-icons/fa'
 import { FaExchangeAlt } from 'react-icons/fa'
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { User } from '../helper/types';
 import _ from 'lodash'
 

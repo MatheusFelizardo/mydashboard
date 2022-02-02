@@ -80,6 +80,9 @@ function EditUserModal({ user, closeModal }: EditUserModalProps) {
                         <Input 
                         value={name || ''}
                         onChange={(e) => {
+                            if(e.target.value === "") {
+                                return setName(e.target.value)
+                            }
                             const isValid = validateString(e.target.value)
                             if (isValid) {
                                 setNameErrorMessage(null)
@@ -104,6 +107,7 @@ function EditUserModal({ user, closeModal }: EditUserModalProps) {
                     <FormControl mt={4} isInvalid={emailErrorMessage ? true : false}>
                         <FormLabel>E-mail</FormLabel>
                         <Input
+                            disabled
                             value={email || ''}
                             onChange={(e) => {
                                 setEmailErrorMessage(null)
@@ -115,6 +119,7 @@ function EditUserModal({ user, closeModal }: EditUserModalProps) {
                     <FormControl mt={4}>
                         <FormLabel>City</FormLabel>
                         <Input 
+                        disabled
                         value={city || ''}
                         onChange={(e) => setCity(e.target.value)} 
                         placeholder='City' />
